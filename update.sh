@@ -203,7 +203,7 @@ echo_auto_reload() {
 }
 
 update_version() {
-    wget https://gitee.com/qd-today/qd/raw/"${remoteversion}"/requirements.txt -O /usr/src/app/requirements.txt && \
+    wget https://p.lizi.su/https://github.com/qd-today/qd/raw/"${remoteversion}"/requirements.txt -O /usr/src/app/requirements.txt && \
     if grep -q -E "Alpine|alpine" /etc/issue
     then
         update_in_alpine
